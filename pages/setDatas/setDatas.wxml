@@ -1,0 +1,72 @@
+<!--setData.wxml-->
+<view class="container">
+  <!-- <van-tree-select
+    class="tree-select"
+    items="{{ items }}"
+    main-active-index="{{ mainActiveIndex }}"
+    active-id="{{ activeId }}"
+    bind:click-nav="onClickNav"
+    bind:click-item="onClickItem"
+  /> -->
+
+  <view>
+    <van-row>
+      <van-col span="4">
+        <!-- 左侧导航栏 -->
+        <van-badge-group active="{{ active }}" bind:change="onChange" class="badge-group-left">
+          <van-badge title="热卖" />
+          <van-badge title="特价"/>
+          <!-- <van-badge title="标签名称"/>
+          <van-badge title="标签名称"/> -->
+        </van-badge-group>
+      </van-col>
+      <van-col span="20">
+        <!-- 右侧卡片展示 -->
+        <block class="content-right">
+          <van-card
+            wx:for="{{itemsCard}}"
+            wx:key="index"
+            tag="{{item.tag}}"
+            price="{{item.price}}"
+            origin-price="{{item.originPrice}}"
+            desc="{{item.desc}}"
+            title="{{item.title}}"
+            thumb="{{ item.thumb }}"
+            custom-class="card-thumb"
+            origin-price-class="origin-price"
+          >
+            <view slot="footer">
+              <block >
+                <i class="iconfont icon-cart"></i>
+              </block>
+            </view>
+          </van-card>
+        </block>
+      </van-col>
+    </van-row>
+  </view>
+
+  <!-- 底部操作项 -->
+  <van-goods-action>
+    <van-goods-action-icon
+      icon="chat-o"
+      text="客服"
+      bind:click="onClickIcon"
+    />
+    <van-goods-action-icon
+      icon="cart-o"
+      text="购物车"
+      bind:click="onClickIcon"
+    />
+    <van-goods-action-button
+      text="加入购物车"
+      type="warning"
+      bind:click="onClickButton"
+    />
+    <van-goods-action-button
+      text="立即购买"
+      bind:click="onClickButton"
+    />
+  </van-goods-action>
+  <van-toast id="van-toast" />
+</view>

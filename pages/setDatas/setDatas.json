@@ -1,0 +1,16 @@
+{
+  "navigationBarTitleText": "分类",
+  "usingComponents": {
+    "van-button": "../../miniprogram_npm/vant-weapp/button/index",
+    "van-card": "../../miniprogram_npm/vant-weapp/card/index",
+    "van-tree-select": "../../miniprogram_npm/vant-weapp/tree-select/index",
+    "van-goods-action": "../../miniprogram_npm/vant-weapp/goods-action/index",
+    "van-goods-action-icon": "../../miniprogram_npm/vant-weapp/goods-action-icon/index",
+    "van-goods-action-button": "../../miniprogram_npm/vant-weapp/goods-action-button/index",
+    "van-toast": "../../miniprogram_npm/vant-weapp/toast/index",
+    "van-badge": "../../miniprogram_npm/vant-weapp/badge/index",
+    "van-badge-group": "../../miniprogram_npm/vant-weapp/badge-group/index",
+    "van-row": "../../miniprogram_npm/vant-weapp/row/index",
+    "van-col": "../../miniprogram_npm/vant-weapp/col/index"
+  }
+}

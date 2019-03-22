@@ -1,0 +1,16 @@
+.tree-select {
+  width: 100%;
+}
+.card-thumb {
+  /* width: 50px!important;
+  height: 50px!important; */
+}
+.origin-price {
+  display: block!important;
+  margin-left: 0px!important;
+}
+.icon-cart {
+  background-color: #EEA2AD;
+  border-radius: 50%;
+  padding:5px;
+}
