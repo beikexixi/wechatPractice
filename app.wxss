@@ -7,6 +7,24 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: 200rpx 0;
+  padding: 20px 0;
   box-sizing: border-box;
-} 
+}
+
+.symbol {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  border-radius: 50%;
+}
+.minus {
+  border: 1px solid #cccccc;
+  color: #EEA2AD;
+  background-color: #ffffff;
+}
+.plus {
+  border: 1px solid #EEA2AD;
+  color: #ffffff;
+  background-color: #EEA2AD;
+}

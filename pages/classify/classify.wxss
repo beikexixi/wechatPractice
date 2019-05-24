@@ -14,3 +14,6 @@
   border-radius: 50%;
   padding:5px;
 }
+.goodsNum {
+  margin: 0px 10px;
+}

@@ -1,0 +1,31 @@
+<!--shopping-cart.wxml 购物车-->
+<view class="container">
+  <view>
+    <block class="content-right">
+      <van-card
+        bindtap="bindViewTap"
+        wx:for="{{ itemsCard }}"
+        wx:key="index"
+        tag="{{ item.tag }}"
+        price="{{ item.price }}"
+        origin-price="{{ item.originPrice }}"
+        desc="{{ item.desc }}"
+        title="{{ item.title }}"
+        thumb="{{ item.thumb }}"
+        custom-class="card-thumb"
+        origin-price-class="origin-price"
+      >
+        <view slot="footer">
+          <block wx:if="{{ item.goodsNum === 0 }}">
+            <i class="iconfont icon-cart"></i>
+          </block>
+          <block wx:else>
+            <i class="symbol minus">-</i>
+            <text class="goodsNum">{{ item.goodsNum }}</text>
+            <i class="symbol plus">+</i>
+          </block>
+        </view>
+      </van-card>
+    </block>
+  </view>
+</view>

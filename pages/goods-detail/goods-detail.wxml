@@ -1,0 +1,21 @@
+<!--goods-detail.wxml 商品详情-->
+<view class="container">
+  <block class="img">
+    我是一张图片
+  </block>
+  <block style="text-align: left;">
+    <text style="font-weight: 600;">商品详情</text>
+    <text>重量：2500-3500g</text>
+    <text>包装：普通</text>
+    <text>保质期：到货即可食用</text>
+    <text>贮存方法：常温</text>
+  </block>
+    
+  <van-goods-action>
+    <van-goods-action-icon icon="chat-o" text="客服" />
+    <van-goods-action-icon icon="cart-o" text="购物车" info="5" />
+    <van-goods-action-icon icon="shop-o" text="店铺" />
+    <van-goods-action-button text="加入购物车" type="warning" />
+    <van-goods-action-button text="立即购买" />
+  </van-goods-action>
+</view>

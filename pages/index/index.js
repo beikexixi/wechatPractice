@@ -8,11 +8,11 @@ Page({
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
-    info: '旅行让生活更美好'
+    info: '开启您的购物之旅'
   },
   handleClick: function() {
     wx.navigateTo({
-      url: '../setDatas/setDatas'
+      url: '../classify/classify'
     })
   },
   //事件处理函数

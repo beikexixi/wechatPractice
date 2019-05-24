@@ -1,0 +1,12 @@
+.origin-price {
+  display: block!important;
+  margin-left: 0px!important;
+}
+.icon-cart {
+  background-color: #EEA2AD;
+  border-radius: 50%;
+  padding:5px;
+}
+.goodsNum {
+  margin: 0px 10px;
+}

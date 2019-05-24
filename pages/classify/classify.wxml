@@ -1,4 +1,4 @@
-<!--setData.wxml-->
+<!--setData.wxml 商品分类-->
 <view class="container">
   <!-- <van-tree-select
     class="tree-select"
@@ -24,20 +24,26 @@
         <!-- 右侧卡片展示 -->
         <block class="content-right">
           <van-card
-            wx:for="{{itemsCard}}"
+            bindtap="bindViewTap"
+            wx:for="{{ itemsCard }}"
             wx:key="index"
-            tag="{{item.tag}}"
-            price="{{item.price}}"
-            origin-price="{{item.originPrice}}"
-            desc="{{item.desc}}"
-            title="{{item.title}}"
+            tag="{{ item.tag }}"
+            price="{{ item.price }}"
+            origin-price="{{ item.originPrice }}"
+            desc="{{ item.desc }}"
+            title="{{ item.title }}"
             thumb="{{ item.thumb }}"
             custom-class="card-thumb"
             origin-price-class="origin-price"
           >
             <view slot="footer">
-              <block >
+              <block wx:if="{{ item.goodsNum === 0 }}">
                 <i class="iconfont icon-cart"></i>
+              </block>
+              <block wx:else>
+                <i class="symbol minus">-</i>
+                <text class="goodsNum">{{ item.goodsNum }}</text>
+                <i class="symbol plus">+</i>
               </block>
             </view>
           </van-card>
@@ -45,28 +51,4 @@
       </van-col>
     </van-row>
   </view>
-
-  <!-- 底部操作项 -->
-  <van-goods-action>
-    <van-goods-action-icon
-      icon="chat-o"
-      text="客服"
-      bind:click="onClickIcon"
-    />
-    <van-goods-action-icon
-      icon="cart-o"
-      text="购物车"
-      bind:click="onClickIcon"
-    />
-    <van-goods-action-button
-      text="加入购物车"
-      type="warning"
-      bind:click="onClickButton"
-    />
-    <van-goods-action-button
-      text="立即购买"
-      bind:click="onClickButton"
-    />
-  </van-goods-action>
-  <van-toast id="van-toast" />
 </view>

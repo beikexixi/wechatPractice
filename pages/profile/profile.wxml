@@ -1,0 +1,51 @@
+<!--profile.wxml 个人中心-->
+<view class="container w100">
+
+  <view class="header w100">
+    <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+
+  <view class="w100" hover-class="none" hover-stop-propagation="false">
+    <van-cell
+      title="便利购余额"
+      icon="gold-coin-o"
+      is-link
+    />
+    <van-cell
+      title="优惠券"
+      icon="balance-pay"
+      is-link
+    />
+    <van-cell
+      title="我的订单"
+      icon="flower-o"
+      is-link
+    />
+    <van-cell
+      title="补款"
+      icon="flower-o"
+      is-link
+    />
+    <van-cell
+      title="企服"
+      icon="flower-o"
+      is-link
+    />
+    <van-cell
+      title="电话客服"
+      icon="phone-circle-o"
+      is-link
+    />
+    <van-cell
+      title="在线客服"
+      icon="flower-o"
+      is-link
+    />
+    <van-cell
+      title="设置"
+      icon="flower-o"
+      is-link
+    />
+  </view>
+</view>
