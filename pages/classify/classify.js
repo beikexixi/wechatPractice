@@ -9,8 +9,7 @@ Page({
       text: 'init data'
     },
 
-    imageURL1: 'cloud://shopping-e410a4.7368-shopping-e410a4/img/213291_223323451124_2.jpg',
-    imageURL2: 'cloud://shopping-e410a4.7368-shopping-e410a4/img/11.png',
+    imageURL2: '/assets/images/11.png',
 
     mainActiveIndex: null,
     activeId: null,
@@ -53,7 +52,7 @@ Page({
       originPrice: '3.00',
       desc: '金针菇',
       title: '袋装金针菇120-150g',
-      thumb: 'cloud://shopping-e410a4.7368-shopping-e410a4/img/11.png',
+      thumb: '/assets/images/11.png',
       goodsNum: 0
     }, {
       tag: '限时秒杀',
@@ -61,7 +60,7 @@ Page({
       originPrice: '3.00',
       desc: '为你注入大力水手同款能量',
       title: '平价菠菜400g',
-      thumb: 'cloud://shopping-e410a4.7368-shopping-e410a4/img/11.png',
+      thumb: '/assets/images/11.png',
       goodsNum: 2
     }]
   },
@@ -75,14 +74,14 @@ Page({
           originPrice: '3.00',
           desc: '金针菇',
           title: '袋装金针菇120-150g',
-          thumb: 'cloud://shopping-e410a4.7368-shopping-e410a4/img/11.png'
+          thumb: '/assets/images/11.png'
         }, {
           tag: '限时秒杀',
           price: '2.00',
           originPrice: '3.00',
           desc: '为你注入大力水手同款能量',
           title: '平价菠菜400g',
-          thumb: 'cloud://shopping-e410a4.7368-shopping-e410a4/img/11.png'
+          thumb: '/assets/images/11.png'
         }]
       })
     } else if (ev.detail === 1) {
@@ -93,14 +92,14 @@ Page({
           originPrice: '13.00',
           desc: '金针菇',
           title: '袋装金针菇120-150g',
-          thumb: 'cloud://shopping-e410a4.7368-shopping-e410a4/img/11.png'
+          thumb: '/assets/images/11.png'
         }, {
           tag: '爆款直降',
           price: '12.00',
           originPrice: '13.00',
           desc: '为你注入大力水手同款能量',
           title: '平价菠菜400g',
-          thumb: 'cloud://shopping-e410a4.7368-shopping-e410a4/img/11.png'
+          thumb: '/assets/images/11.png'
         }]
       })
     }
